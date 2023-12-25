@@ -23,7 +23,6 @@ public class GearRatios {
         Pattern p = Pattern.compile("\\d+"); // matches all digits
         Matcher matcher = p.matcher(s);
 
-
         while (matcher.find()) {
             int n = Integer.parseInt(matcher.group()); // Int of match
             int startIdx = matcher.start() % 141; // Start index of match
@@ -38,7 +37,6 @@ public class GearRatios {
     protected static String[] createStringArr(String s) {
         return s.split("\\n");
     }
-
 
     // Idea: Get the line, the one above and below from the String-array. We have to search on the same startIdx, endIdx for each line to find adjacent characters.
     protected static boolean findAdjacent(int startIdx, int endIdx, String line, String above, String under) {
