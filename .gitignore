@@ -31,4 +31,4 @@ bin/
 
 
 src/**/test
-src/**/input/
+src/**/input
