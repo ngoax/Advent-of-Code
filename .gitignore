@@ -30,6 +30,4 @@ bin/
 .DS_Store
 
 
-src/**/test
-src/**/input
 Advent of Code.iml
