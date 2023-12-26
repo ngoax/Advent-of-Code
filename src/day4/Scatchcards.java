@@ -14,6 +14,7 @@ public class Scatchcards {
         while ((readByte = file.read()) != -1) {
             stringBuilder.append((char) readByte);
         }
+
         return stringBuilder.toString();
     }
 
@@ -45,8 +46,9 @@ public class Scatchcards {
                 }
             }
         }
+
         System.out.println("Matches found: " + count);
-        System.out.println("Points: " + (int) (Math.pow(2, count -1)));
-        return (int) (Math.pow(2, count -1));
+        System.out.println("Points: " + (int) (Math.pow(2, count - 1)));
+        return (int) (Math.pow(2, count - 1));
     }
 }

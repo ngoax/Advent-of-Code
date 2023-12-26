@@ -8,7 +8,6 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         String[] strArr = Scatchcards.createStringArr(Scatchcards.readFile());
-        // System.out.println(Arrays.toString(strArr));
         int sum = 0;
         for (String s : strArr) {
             int[] winningNumbers = Scatchcards.getWinningNumbers(s);
